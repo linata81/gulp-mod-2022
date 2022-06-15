@@ -1,0 +1,10 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
