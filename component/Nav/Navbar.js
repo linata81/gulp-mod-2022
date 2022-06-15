@@ -1,41 +1,13 @@
-//Мобильное меню бургер
-function burgerMenu() {
-  const burger = document.querySelector('.burger');
-  const menu = document.querySelector('.menu');
-  const body = document.querySelector('body');
+//hamburger menu
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".menu");
 
-  burger.addEventListener('click', () => {
-    if(!menu.classList.contains('active')) {
-      menu.classList.add('active');
-      burger.classList.add('active-burger');
-      body.classList.add('locked');
-    } else {
-      menu.classList.remove('active');
-      burger.classList.remove('active-burger');
-      body.classList.remove('locked');      
-    }
-  })
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+});
 
-  //брейкпоинт навбара
-  window.addEventListener('resize', () => {
-    if(window.innerWidth > 991.98) {
-      menu.classList.remove('active');
-      burger.classList.remove('active-burger');
-      body.classList.remove('locked'); 
-    }
-  })
-}
-burgerMenu();
-
-//Вызывать эту функцию, если нужно зафиксировать меню при скроле
-function fixedNav() {
-  const nav = document.querySelector('nav');
-  //указываем в px сколько нужно проскролить чтобы меню стало фиксированным
-  const breakpoint = 1;
-  if(window.scrollY >= breakpoint) {
-    nav.classList.add('fixed-nav')
-  } else {
-    nav.classList.remove('fixed-nav')
-  }
-}
-window.addEventListener('scroll', fixedNav);
+document.querySelectorAll(".menu__link").forEach(n => n.addEventListener("click", () => {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}))
