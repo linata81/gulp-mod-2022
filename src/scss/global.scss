@@ -1,6 +1,4 @@
-@import "vars";
-
-
+@import "./vars";
 
 body {
   min-height: 100vh;
@@ -46,10 +44,4 @@ body {
   100% {
     opacity: 1;
   }
-}
-
-.test {
-  width: 500px;
-  height: 500px;
-  background: url("../img/women.jpg") center center / cover no-repeat;
 }

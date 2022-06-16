@@ -1,0 +1,136 @@
+header {
+  background-color: #262626;
+}
+.navbar {
+  min-height: 45px;
+  display: flex;
+  gap: 200px;
+  align-items: center;
+  padding: 0 24px;
+}
+.logo {
+  font-size: 2rem;
+  color: white;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  
+  &__link {
+    color: white;
+    transition: 0.7s ease;
+    &:hover {
+      color: dodgerblue;
+    }
+  }
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3 ease-in-out;
+  background-color: white;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown__menu {
+  position: absolute;
+  left: 0;
+  top: calc(100% + .8rem);
+  background-color: white;
+  padding: .75rem;
+  border-radius: .25rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+.dropdown__menu > .menu__link {
+  color: #262626;
+}
+.dropdown > .menu__link.active + .dropdown__menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.dropdown > .menu__link.active,
+.dropdown__menu > .menu__link:hover{
+  color: dodgerblue;
+}
+.dropdown > .menu__link.active {
+  svg {
+    fill:dodgerblue;
+    transform: rotate(180deg);
+  }
+}
+.menu__link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  svg {
+    fill: white;
+    transition: fill 150ms ease-in-out, transform 150ms ease-in-out;
+  }
+}
+.menu__link:hover {
+  svg {
+    fill: dodgerblue;
+  }
+}
+
+@media(max-width: $breakpoint768) {
+  .navbar {
+    justify-content: space-between;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .menu {
+    position: fixed;
+    left: -100%;
+    top: 45px;
+    gap: 0;
+    height: 300px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 24px !important;
+    background-color: #262626;
+    width: 100%;
+    transition: 0.3s;
+  }
+  .menu.active {
+    left: 0;
+  }
+  .menu__item {
+   min-height: 50px;
+  }
+  .dropdown__menu {
+    position: static;
+    height: 0;
+  }
+  .dropdown > .menu__link.active + .dropdown__menu {
+    height: 100%;
+  }
+}

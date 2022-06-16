@@ -16,7 +16,10 @@ hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 });
 
-document.querySelectorAll(".menu__link").forEach(n => n.addEventListener("click", () => {
-  hamburger.classList.remove("active");
-  navMenu.classList.remove("active");
+document.querySelectorAll(".menu__link").forEach(n => n.addEventListener("click", (e) => {
+  const isDropdownButton = e.target.matches("[data-dropdown-button]");
+  if(!isDropdownButton) {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");  
+  }
 }))
