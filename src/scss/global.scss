@@ -2,8 +2,10 @@
 
 body {
   min-height: 100vh;
+  height: 200vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
+  font-size: 14px;
   line-height: 1.5;
   font-family: $fontMain;
   color: $primary;
