@@ -2,7 +2,8 @@
 
 body {
   min-height: 100vh;
-  height: 200vh;
+  height: 100%;
+  position: relative;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   font-size: 14px;
@@ -12,9 +13,7 @@ body {
   &.locked {
     overflow: hidden;
   }
-  position: relative;
 }
-
 .container {
   max-width: ($containerWidth + $containerPadding) + px;
   width: 100%;
