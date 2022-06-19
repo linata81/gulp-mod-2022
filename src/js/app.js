@@ -19,3 +19,4 @@ document.querySelectorAll(".menu__link").forEach(n => n.addEventListener("click"
   }
 }))
 })();
+
