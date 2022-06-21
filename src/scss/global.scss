@@ -1,10 +1,12 @@
 @import "./vars";
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   min-height: 100vh;
   height: 100%;
   position: relative;
-  scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   font-size: 14px;
   line-height: 1.5;
