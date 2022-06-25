@@ -1,5 +1,4 @@
-@import "./vars";
-header {
+.header {
   background-color: #262626;
   font-family: "Montserrat", sans-serif;
 }
@@ -19,7 +18,7 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: 60px;
-  
+  z-index: 5;
   &__link {
     color: white;
     transition: 0.7s ease;
@@ -44,6 +43,12 @@ header {
 }
 
 @media(max-width: $breakpoint768) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
   .hamburger {
     display: block;
   }
