@@ -4,8 +4,7 @@
   box-sizing: border-box;
 }
 
-ul[class],
-ol[class] {
+ul,ol {
   padding: 0;
   list-style: none;
 }
@@ -16,8 +15,8 @@ h2,
 h3,
 h4,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 li,
 figure,
 figcaption,
@@ -26,20 +25,21 @@ dl,
 dd {
   margin: 0;
 }
+
 a {
   text-decoration: none;
 }
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
+
 img {
   max-width: 100%;
   display: block;
 }
+
 /* Указываем понятную периодичность в потоке данных у article*/
 article > * + * {
   margin-top: 1em;
 }
+
 /* Наследуем шрифты для инпутов и кнопок */
 input,
 button,
@@ -47,9 +47,11 @@ textarea,
 select {
   font: inherit;
 }
-button[class] {
+
+button {
   cursor: pointer;
 }
+
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
 @media (prefers-reduced-motion: reduce) {
   * {

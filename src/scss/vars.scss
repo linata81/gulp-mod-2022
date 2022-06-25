@@ -1,14 +1,15 @@
 //Container & breakpoints
-$containerWidth: 1200;
-$containerPadding: 40;
-$breakpoint1450: 1449.98 + px;
-$breakpoint992: 991.98 + px;
-$breakpoint768: 767.98 + px;
-$breakpoint480: 479.98 + px;
+$containerWidth: 1200 + px;
+
+$breakpoint1450: 1450 + px;
+$breakpoint1200: 1200 + px;
+$breakpoint992:  992 + px;
+$breakpoint768:  768 + px;
+$breakpoint576:  576+ px;
 
 //Colors
 $primary: black;
-$secondary: "";
+// $secondary: ;
 
 //Burger menu
 $burgerBreakpoint: $breakpoint992;
