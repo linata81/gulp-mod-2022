@@ -36,7 +36,8 @@ flsFunctions.isWebp();
     
     //указать в пикселях, сколько проскролить чтобы меню стало фиксированным
     const breakpoint = 1;
-    if(window.scrollY >= breakpoint) {
+ // if(window.scrollY >= breakpoint) {
+    if(window.scrollY >= breakpoint && window.innerWidth < 768) {
       nav.classList.add("fixed-nav")
     } else {
       nav.classList.remove("fixed-nav")
