@@ -36,7 +36,7 @@
 .swiper__btn-next {
   right: 0;
 }
-@media (max-width: $breakpoint768) {
+@media screen and (max-width: $breakpoint768) {
   .swiper {
     width: 80%;
   }

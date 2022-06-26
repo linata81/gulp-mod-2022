@@ -28,7 +28,7 @@
       font-weight: 700
     }
 }
-@media (max-width: $breakpoint480) {
+@media screen and (max-width: $breakpoint480) {
   .promotion__timer {
     width: 85%;
     margin-left: auto;

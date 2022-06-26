@@ -67,7 +67,7 @@ $blue:#1c4961;
 .hide {
   display: none;
 }
-@media (max-width: $breakpoint768) {
+@media screen and (max-width: $breakpoint768) {
   .card {
     width: calc(50% - 72px);
   }

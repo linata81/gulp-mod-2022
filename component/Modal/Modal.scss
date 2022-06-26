@@ -75,7 +75,7 @@
   font-size: 11px;
   color: #666;
 }
-@media (max-width: $breakpoint480) {
+@media screen and (max-width: $breakpoint480) {
   .popup__content {
     width: 70%;
   }

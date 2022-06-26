@@ -46,6 +46,3 @@ flsFunctions.isWebp();
   
   window.addEventListener('scroll', fixedNav)
 })();
-
-
-

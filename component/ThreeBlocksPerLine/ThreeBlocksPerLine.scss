@@ -49,7 +49,7 @@
   color: #848281;
   margin-top: 10px;
 }
-@media (max-width: $breakpoint768) {
+@media screen and (max-width: $breakpoint768) {
   .block__content {
     flex-direction: column;
   }
