@@ -32,7 +32,8 @@ flsFunctions.isWebp();
   
 //если нужно зафиксировать меню при скроле
   function fixedNav() {
-    const nav = document.querySelector(".navbar");
+    // const nav = document.querySelector(".navbar");
+    const nav = document.querySelector(".header");
     
     //указать в пикселях, сколько проскролить чтобы меню стало фиксированным
     const breakpoint = 1;
@@ -46,3 +47,4 @@ flsFunctions.isWebp();
   
   window.addEventListener('scroll', fixedNav)
 })();
+
