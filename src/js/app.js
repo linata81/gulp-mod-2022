@@ -1,4 +1,5 @@
 import * as flsFunctions from "./modules/functions.js";
+
 flsFunctions.isWebp();
 
 //hamburger menu
@@ -47,4 +48,3 @@ flsFunctions.isWebp();
   
   window.addEventListener('scroll', fixedNav)
 })();
-
