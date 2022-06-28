@@ -3,9 +3,11 @@
   @@include('html/head.html', { "title": "Главная" })
   <body>
     
-    @@include('html/header.html',{})
-
-    
+    @@include('html/header.html',
+    {"activeclassHome": "menu__link active",
+     "activeclassAbout": "menu__link",    
+     "activeclassContact": "menu__link"})   
+     
     <main>
       <div class="container">
         

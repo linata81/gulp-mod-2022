@@ -4,8 +4,13 @@
     "title": "Про нас"
   })
   <body>
-    @@include('html/header.html',{})
+    @@include('html/header.html',
+    {"activeclassHome": "menu__link",
+     "activeclassAbout": "menu__link active",
+     "activeclassContact": "menu__link"})
+    
     <main></main>
+    
     @@include('html/footer.html',{})
     
     <script src="js/app.min.js"></script>
