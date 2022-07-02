@@ -40,8 +40,5 @@
     "webpack": "^5.73.0",
     "webpack-stream": "^7.0.0"
   },
-  "description": "",
-  "dependencies": {
-    "swiper": "^8.2.5"
-  }
+  "description": ""
 }
