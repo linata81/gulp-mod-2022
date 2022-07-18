@@ -1,18 +1,6 @@
 .header {
   background-color: #262626;
 }
-
-.header.fixed-nav {
-  background-color: #F05718;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 70px;
-  z-index: 5;
-  transition: all .3s ease ;
-}
-
 .header__container {
   display: flex;
   align-items: center;
@@ -27,6 +15,16 @@
   padding: 0 24px;
 }
 
+//.header.fixed-nav {
+// background-color: #F05718;
+// position: fixed;
+// top: 0;
+// left: 0;
+// width: 100%;
+// min-height: 70px;
+// z-index: 5;
+//  transition: all .3s ease ;
+//}
 // .navbar.fixed-nav {
 //   background-color: #F05718;
 //   position: fixed;
