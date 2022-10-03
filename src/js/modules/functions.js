@@ -1,3 +1,7 @@
+// так подключаем в app.js
+// import * as flsFunctions from "./modules/functions.js";
+// flsFunctions.isWebp();
+
 /* проверка поддержки webp, добавление класса webp или no-webp для HTML */
 export function isWebp() {
   //проверка поддержки webp
